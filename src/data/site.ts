@@ -8,7 +8,7 @@ export const site = {
   nameLine2: 'Beauty Hub',
   tagline: 'Look Beautiful. Feel Confident.',
   intro:
-    'A women-only beauty studio in M.P. Nagar where bridal artistry, mehndi and everyday beauty care are practised with the same patience.',
+    'A women-only beauty studio in M.P. Nagar, Etah where bridal artistry, mehndi and everyday beauty care are practised with the same patience.',
   phone: '9058093532',
   phoneHref: 'tel:+919058093532',
   /** The printed material lists this number for calls and WhatsApp alike. */
@@ -21,8 +21,20 @@ export const site = {
   address: {
     area: 'M.P. Nagar',
     landmark: 'Near Om Guest House',
-    full: 'M.P. Nagar, Near Om Guest House',
+    city: 'Etah',
+    state: 'Uttar Pradesh',
+    postalCode: '207001',
+    /** Used in the hero strip, where the line has to stay short. */
+    short: 'M.P. Nagar, Near Om Guest House, Etah',
+    full: 'M.P. Nagar, Near Om Guest House, Etah, Uttar Pradesh 207001',
   },
+  /**
+   * Google Maps pin for the Om Guest House landmark the studio sits beside.
+   * Visitors navigate to the landmark and the studio confirms the last few
+   * steps over WhatsApp.
+   */
+  mapsUrl: 'https://maps.app.goo.gl/my7vV7SFvbnx8k2r6',
+  geo: { latitude: 27.5611147, longitude: 78.6585873 },
   note: 'Studio services are for women only.',
 } as const
 

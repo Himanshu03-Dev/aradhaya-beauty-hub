@@ -58,11 +58,21 @@ export function Footer() {
             <ul className="mt-5 space-y-4 text-[0.95rem]">
               <li className="flex items-start gap-3">
                 <MapPin aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 text-gold" />
-                <span>
+                <a
+                  href={site.mapsUrl}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="group transition-colors hover:text-gold"
+                >
                   {site.address.area}
                   <br />
                   {site.address.landmark}
-                </span>
+                  <br />
+                  {site.address.city}, {site.address.state} {site.address.postalCode}
+                  <span className="mt-2 block text-[0.7rem] uppercase tracking-[0.18em] text-gold/80 group-hover:text-gold">
+                    Get directions &#8599;
+                  </span>
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone aria-hidden="true" className="h-4 w-4 shrink-0 text-gold" />
