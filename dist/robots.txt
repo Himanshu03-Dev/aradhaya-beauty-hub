@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://himanshu03-dev.github.io/aradhaya-beauty-hub/sitemap.xml
